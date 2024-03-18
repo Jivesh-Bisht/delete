@@ -1,6 +1,3 @@
-git clone https://aur.archlinux.org/yay.git
-cd yay
-makepkg -si
-
-git clone https://github.com/Genograche/Archlinuxhyprdots.git
-cd Arch-hyprlandconfigs
+sh <(curl -L https://nixos.org/nix/install) --no-daemon
+ . ~/.nix-profile/etc/profile.d/nix.sh
+export NIX_CONFIG="experimental-features = nix-command flakes"
